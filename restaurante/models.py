@@ -9,3 +9,6 @@ class Restaurante(models.Model):
     valorMenu = models.BigIntegerField(null=False)
     fechaPago = models.DateTimeField()
     valorPagado = models.BigIntegerField(null=False)
+
+class Meta:
+    ordering = ['nombreRestaurante']
