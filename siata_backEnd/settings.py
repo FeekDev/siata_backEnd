@@ -33,8 +33,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'restaurante', # la aplicacion que se va desarrollar
-    'rest_framework', # la aplicacion para crear la API
+    'rest_framework',  # la aplicacion para crear la API
+    'restaurante'  # la aplicacion que se va desarrollar
 ]
 
 MIDDLEWARE = [
