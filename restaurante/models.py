@@ -10,17 +10,13 @@ Características de cada una
 from django.db import models
 from rest_framework import serializers, status
 from rest_framework.response import Response
-from django.core.validators import RegexValidator
+from django.core.validators import RegexValidator, MinValueValidator, MaxValueValidator
+from pytz import UTC
 from datetime import datetime
 
-'''
-def validator_nombreRestaurante(value):
-    if "12345678910" in value:
-        raise serializers.ValidationError('Formato de nombre incorrecto')
-        return Response(status=status.HTTP_400_BAD_REQUEST)
-    else:
-        return value
-'''
+
+DATETIME_FORMAT=['%m/%d/%Y']
+
 
 class Restaurante(models.Model):
     '''
@@ -50,9 +46,36 @@ class Restaurante(models.Model):
             ),
         ]
     )
-    valorMenu = models.BigIntegerField(null=False)
-    valorPagado = models.BigIntegerField(null=False)
-    fechaPago = models.DateField(blank=False, default=datetime.now().date())
+    valorMenu = models.IntegerField(
+            null=False,
+            validators=[
+                MinValueValidator(1),
+                MaxValueValidator(1000000)]
+    )
+    valorPagado = models.IntegerField(
+            null=False
+    )
+    fechaPago = models.DateField(
+            auto_now_add=True,
+            blank=False
+    )
+
+    '''
+    @property
+    def validador_Pago(self):
+        valor_menu = self.valorMenu
+        valor_pagado = self.valorPagado
+        if valor_menu == valor_pagado:
+            raise serializers.ValidationError('gracias por pagar todo tu arriendo')
+            return Response(status=status.HTTP_200_OK)
+        else:
+            raise serializers.ValidationError('gracias por tu abono, sin embargo recuerda que te hace')
+
+    '''
+
+
+def datepublished(self):
+    return self.pub_date.strftime('%d/%M/%Y')
 
 
 class Meta:
