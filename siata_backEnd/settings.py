@@ -73,14 +73,6 @@ WSGI_APPLICATION = 'siata_backEnd.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'testdb',
-        'USER': 'test',
-        'PASSWORD': 'test',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
-    },
-    'siatasiata': {
-        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'siatadb',
         'USER': 'siata',
         'PASSWORD': 'siata',
