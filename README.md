@@ -57,21 +57,27 @@ _Ciertos campos de la base de datos tenía unas validaciones, aquí se deja plas
 
 ![nombre](https://user-images.githubusercontent.com/98775024/218369354-7336bd19-0d85-4c66-a9a6-1faaadd92959.png)
 
-```
-Da un ejemplo
-```
+### Prueba valor del menú
+
+
+![image](https://user-images.githubusercontent.com/98775024/218369768-98a858c0-5585-46e3-a5c6-95effb0a7a0f.png)
+
+![image](https://user-images.githubusercontent.com/98775024/218369846-b053d1aa-d567-4edc-a4fa-a61e2f408868.png)
+
+### Demostración de la base de datos desde la interface
+
+![image](https://user-images.githubusercontent.com/98775024/218370860-56d0c7c1-a202-45c2-a625-9f84cbee92f1.png)
+
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+_Herramientas basadas en el Framework Django_
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+* [Django](https://www.djangoproject.com/download/) - El framework para el BackEnd
+* [Postgres](https://www.postgresql.org/download/) - Base de datos
+* [REST](https://www.django-rest-framework.org) - Framework para la creacionde la API
 
 ## Desarrollador ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+* **Felipe Rios** - *Participante* - [GitHub](https://github.com/felipeholbi)
 
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
