@@ -1,7 +1,7 @@
 """
-En el actual archivo se realizaran configuraciones generales como:
+Configuraciones generales
 ---------
-- Installed APPS(confirmacion de nuevas aplicaciones)
+- Installed APPS(Confirmación de nuevas aplicaciones)
 - Databases(Configurar la base de datos elegida)
 
 """

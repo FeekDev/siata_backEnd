@@ -3,7 +3,7 @@ Modelación de la base de datos
 
 De acuerdo a los campos que necesitemos en nuestra
 base de datos, elegiremos el tipo del campo y las
-Características de cada una
+características de cada una
 '''
 
 # Modulos
@@ -11,7 +11,7 @@ from django.db import models
 from rest_framework import serializers, status
 from rest_framework.response import Response
 from django.core.validators import RegexValidator, MinValueValidator, MaxValueValidator
-from pytz import UTC
+from django.core.exceptions import ValidationError
 from datetime import datetime
 
 
@@ -60,23 +60,15 @@ class Restaurante(models.Model):
             blank=False
     )
 
+    class Meta:
+        ordering = ['nombreRestaurante']
+
+
+def conversion_Horaria(self):
     '''
-    @property
-    def validador_Pago(self):
-        valor_menu = self.valorMenu
-        valor_pagado = self.valorPagado
-        if valor_menu == valor_pagado:
-            raise serializers.ValidationError('gracias por pagar todo tu arriendo')
-            return Response(status=status.HTTP_200_OK)
-        else:
-            raise serializers.ValidationError('gracias por tu abono, sin embargo recuerda que te hace')
-
+    Se realiza con el fin de poder
+    tomar los datos necesarios del dia
+    que se realizo el pago, sin tener
+    que tomar la hora.
     '''
-
-
-def datepublished(self):
     return self.pub_date.strftime('%d/%M/%Y')
-
-
-class Meta:
-    ordering = ['nombreRestaurante']

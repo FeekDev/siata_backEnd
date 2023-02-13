@@ -5,7 +5,7 @@ La finalidad de este archivo es poder
 tener los datos en formato json
 '''
 
-# Modulo
+# Modulos
 from rest_framework import serializers
 from .models import Restaurante
 
@@ -21,4 +21,4 @@ class RestauranteSerializer(serializers.ModelSerializer):
     '''
     class Meta:
         model = Restaurante
-        fields = '__all__'
+        fields = '__all__' # Denotacion para obtener los campos de la DB

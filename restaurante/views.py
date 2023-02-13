@@ -1,3 +1,11 @@
+'''
+Vistas
+------
+Se determina que lógica desarrollaremos para poder
+responder la solicitud que se está haciendo desde cada
+una de las rutas definidas
+'''
+
 # Modulos
 from django.shortcuts import render
 from django.http import HttpResponse
@@ -7,16 +15,24 @@ from rest_framework.response import Response
 from .models import Restaurante
 from .serializers import RestauranteSerializer
 
-# Views
-
+# Vistas
 def index(request):
+    '''
+    Página de inicio
+    ---------------
+    En este caso tiene un mensaje sencillo
+    pero podemos crear un template en HTML
+    '''
     return HttpResponse("Hello, this is the home page")
 
 
 @api_view(['GET', 'POST'])
 def api_pagos(request):
     '''
-    Listar todos los pagos, o poder hacer un nuevo pago
+    API general
+    -----------
+    Podemos listar todos los pagos
+    o también realizar hacer un nuevo pago
     '''
     if request.method == 'GET':
         restaurantes = Restaurante.objects.all()
