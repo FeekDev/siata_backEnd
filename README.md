@@ -1,30 +1,29 @@
 <h1 align="center"> PRUEBA TÉCNICA DESARROLLO BACKEND SIATA </h1>
 
-_Acá va un párrafo que describa lo que es el proyecto_
+_El proyecto tiene como fin elegir una tecnología para realizar una API para una cadena de restaurantes en la cual se pueda realizar los pagos y adicional también poder ver el historial de pagos realizados_
 
 ## Comenzando 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
-Mira **Deployment** para conocer como desplegar el proyecto.
-
+_En primer lugar, es necesario poder clonar el repositorio con el fin de poder realizar las diferentes pruebas._
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+_Para poder realizar un uso completo de la API se recomienda realizar la instalación de los siguientes paquetes_
 
 ```
-Da un ejemplo
+pip install Django==4.0
+sudo apt install postgresql postgresql-contrib
+pip install psycopg2
 ```
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+_Comencemos_
 
-_Dí cómo será ese paso_
+_Despues de haber clonado vamos a ubicar el directorio con nombre siata_backEnd_
 
 ```
-Da un ejemplo
+![image](https://user-images.githubusercontent.com/98775024/218367052-e20ee9a8-da36-4d87-b620-2ba567d3b8f6.png)
 ```
 
 _Y repite_
