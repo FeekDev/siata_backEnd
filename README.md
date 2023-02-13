@@ -39,19 +39,23 @@ _Y nos aparecerá que nuestra aplicación indicando que ya está corriendo por e
 
 ## Pruebas de entrada y salida ⚙️
 
-# Prueba con el metodo POST
+### Prueba con el metodo POST
 
 ![Screenshot from 2023-02-12 22-22-05](https://user-images.githubusercontent.com/98775024/218368544-440d30f3-f4de-4ebf-927c-06e48e516561.png)
 
-# Prueba con el metodo GET
+### Prueba con el metodo GET
 
 ![image](https://user-images.githubusercontent.com/98775024/218368730-5967f2cb-c212-48a4-9c0a-29360d475380.png)
 
 _En este caso para poder utilizar nuestros endpoint hemos utilizado la extension Thunder CLient que nos deja hacer las consultas POST y GET, y en cada consulta podemos ver la ruta necesaria para poder obtener los datos_
 
-### Pruebas de validacion de los campos de la base de satos 🔩
+## Pruebas de validacion de los campos de la base de satos 🔩
 
-_Explica que verifican estas pruebas y por qué_
+_Ciertos campos de la base de datos tenía unas validaciones, aquí se deja plasmada la demostración_
+
+### Prueba del campo nombre del restaurante
+
+![nombre](https://user-images.githubusercontent.com/98775024/218369354-7336bd19-0d85-4c66-a9a6-1faaadd92959.png)
 
 ```
 Da un ejemplo
