@@ -2,21 +2,9 @@
 
 ##Índice
 
-[Índice]([Descripción del proyecto](#descripción-del-proyecto)
+[Índice]()
 
-[Características de la aplicación y demostración](#Características-de-la-aplicación-y-demostración)
-
-[Acceso al proyecto](#acceso-proyecto)
-
-[Tecnologías utilizadas](#tecnologías-utilizadas)
-
-[Personas Contribuyentes](#personas-contribuyentes)
-
-[Personas-Desarrolladores del Proyecto](#personas-desarrolladores)
-
-[Conclusión](#conclusión))
-
-[Descripción del proyecto](#descripción-del-proyecto)
+[Descripción del proyecto](Se desarrollo)
 
 [Características de la aplicación y demostración](#Características-de-la-aplicación-y-demostración)
 
