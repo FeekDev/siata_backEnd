@@ -79,5 +79,5 @@ _Herramientas basadas en el Framework Django_
 
 ## Desarrollador ✒️
 
-* **Felipe Rios** - *Participante* - [GitHub](https://github.com/felipeholbi)
+* **Felipe Rios** - [GitHub](https://github.com/felipeholbi)
 
