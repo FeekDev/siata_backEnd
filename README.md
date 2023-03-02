@@ -1,4 +1,4 @@
-<h1 align="center"> PRUEBA TÉCNICA DESARROLLO BACKEND SIATA </h1>
+<h1 align="center"> Creación de API con Django </h1>
 
 _El proyecto tiene como fin elegir una tecnología para realizar una API para una cadena de restaurantes en la cual se pueda realizar los pagos y adicional también poder ver el historial de pagos realizados_
 
